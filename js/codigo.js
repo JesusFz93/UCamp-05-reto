@@ -14,3 +14,9 @@ Que facil es incluir 'comillas simples'
 y "comillas dobles"`;
 
 alert(mensaje);
+
+
+// EJERCICIO 3
+
+const meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+console.log(meses);
