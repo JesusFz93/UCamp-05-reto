@@ -32,3 +32,32 @@ for(var i=1; i<=numero; i++) {
   res *= i;
 }
 alert(res);
+
+
+// Ejercicio 10         La ruta nos aporto otro paso natural
+
+const ejercicio10 = () => {
+  const esPalindromo = (cadena) => {
+    let resp = "";
+  
+    let cadenaSinEspacios = cadena.replace(/\s/g,"");
+    let cadenaSplit = cadenaSinEspacios.split("");
+    let cadenaSplitReversa = cadenaSplit.reverse();
+    let cadenaSinEspaciosReversa = cadenaSplitReversa.join("");
+    
+    if (cadenaSinEspacios.toLowerCase() == cadenaSinEspaciosReversa.toLowerCase()) {
+      resp = "Es un palíndromo";
+    } else {
+      resp = "No es un palíndromo";
+    }
+  
+    return resp;
+  }
+  
+  
+  let cadena = prompt("Introduce una cadena de texto: ");
+  
+  const respuesta = esPalindromo(cadena);
+  console.log(respuesta);
+  alert(respuesta);
+}
