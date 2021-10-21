@@ -39,6 +39,7 @@ const ejercicio3 = () => {
 
 }
 
+// EJERCICIO 4
 const ejercicio4 = () => {
 
   var valores = ["parangaricutirimicuaro",true,5, false, "1", "javascript", 6, true, 2];
@@ -55,12 +56,9 @@ const ejercicio4 = () => {
       }  
     }
   }
-  if(index) {
-    console.log(valores[index]);
-  }
-
   
-
+  console.log(valores[index]);
+  
 }
 
 // EJERCICIO 5
