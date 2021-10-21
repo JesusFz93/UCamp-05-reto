@@ -63,6 +63,41 @@ const ejercicio5 = () => {
 
 }
 
+// EJERCICIO 6
+const ejercicio6 = () => {
+
+  const calculoDNI = (numeroDNI, letraDNI) => {
+    let mensaje = "";
+    let letras = ["T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q","V","H","L","C","K","E","T"];
+    let calculo = 0;
+
+
+    if (numeroDNI < 0 || numeroDNI > 99999999) {
+      mensaje = "El numero proporcionado no es valido!"; 
+    } else {
+
+      calculo = numeroDNI % 23;
+
+      if (letras[calculo] !== letraDNI) {
+        mensaje = "La letra que ha indicado no es correcta.";
+      } else {
+        mensaje = "El numero y la letra DNI son correctos.";
+      }
+    }
+
+    return mensaje;
+  }
+
+  let numeroDNI = Number(prompt("Introduce el numero DNI: "));
+  let letraDNI = prompt("Introduce la letra DNI: ");
+
+  const respuesta = calculoDNI(numeroDNI, letraDNI);
+  console.log(respuesta);
+  alert(respuesta);
+  
+
+}
+
 //Ejercicio 7 factorial
 //Para sacar el factorial de un número hay que multiplicar los número que hay entre ese número hasta el uno.
 
