@@ -55,7 +55,9 @@ const ejercicio4 = () => {
       }  
     }
   }
-  console.log(valores[index]);
+  if(index) {
+    console.log(valores[index]);
+  }
 
   
 
