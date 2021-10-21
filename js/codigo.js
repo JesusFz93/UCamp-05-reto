@@ -137,6 +137,22 @@ const ejercicio7 = () => {
 
 }
 
+//Ejercicio 8
+
+  var numero = prompt("Introduce un número entero");
+ 
+  var resultado = parImpar(numero);
+  alert("El número "+numero+" es "+resultado);
+ 
+  function parImpar(numero) {
+    if(numero % 2 == 0) {
+      return "par";
+  }
+  else {
+    return "impar";
+  }
+}
+
 // Ejercicio 9  
 const ejercicio9 = () => {
   const infoCadenaTexto = (cadena) => {
