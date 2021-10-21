@@ -39,6 +39,28 @@ const ejercicio3 = () => {
 
 }
 
+const ejercicio4 = () => {
+
+  var valores = ["parangaricutirimicuaro",true,5, false, "1", "javascript", 6, true, 2];
+  var a = 0;
+  var index;
+
+  for (let i = 0; i < valores.length; i++) {
+
+    if (typeof valores[i] == 'string' || valores[i] instanceof String){
+      var b = valores[i].length;
+      if (b > a) {
+        a=b;
+        index=i;
+      }  
+    }
+  }
+  console.log(valores[index]);
+
+  
+
+}
+
 // EJERCICIO 5
 const ejercicio5 = () => {
 
@@ -110,6 +132,8 @@ const ejercicio7 = () => {
     res *= i;
   }
   alert(res);
+
+  
 
 }
 
