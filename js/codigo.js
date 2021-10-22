@@ -45,18 +45,50 @@ const ejercicio4 = () => {
   var valores = ["parangaricutirimicuaro",true,5, false, "1", "javascript", 6, true, 2];
   var a = 0;
   var index;
+  var numeros = [];
+  var suma = 0;
+  var resta = 0;
+  var multiplicacion = 1;
+  var division = 1;
+  var modulo = 1;
 
   for (let i = 0; i < valores.length; i++) {
-
-    if (typeof valores[i] == 'string' || valores[i] instanceof String){
+    if (typeof valores[i] == 'string' || valores[i] instanceof String) {
       var b = valores[i].length;
       if (b > a) {
         a=b;
         index=i;
       }  
     }
+
+    if(typeof valores[i] == 'boolean') {
+      if(valores[i] === true) {
+        console.log('El valor encontrado es true');
+      } else {
+        console.log('El valor encontrado es false');
+      }
+    }
+
+    if(typeof valores[i] == 'number') {
+      // Con el método push insertas los valores que quieras dentro de tu array
+      // Es un operador específico de Arrays
+      numeros.push(valores[i]);
+    }
   }
   
+  for(let j = 0; j < numeros.length; j++) {
+    suma            = suma + numeros[j];
+    resta           = resta - numeros[j];
+    multiplicacion  = multiplicacion * numeros[j];
+    division        = division / numeros[j];
+    modulo          = modulo % numeros[j];
+  }
+
+  console.log('Suma: ' + suma);
+  console.log('Resta: ' + resta);
+  console.log('Multiplicacion: ' + multiplicacion);
+  console.log('Division: ' + division);
+  console.log('Modulo: ' + modulo);
   console.log(valores[index]);
   
 }
