@@ -171,6 +171,7 @@ const ejercicio7 = () => {
 
 //Ejercicio 8
 
+const ejercicio8 = () => { 
   var numero = prompt("Introduce un número entero");
  
   var resultado = parImpar(numero);
@@ -179,10 +180,12 @@ const ejercicio7 = () => {
   function parImpar(numero) {
     if(numero % 2 == 0) {
       return "par";
+    }
+    else {
+      return "impar";
+    }
   }
-  else {
-    return "impar";
-  }
+  
 }
 
 // Ejercicio 9  
